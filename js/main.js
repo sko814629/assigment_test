@@ -15,7 +15,7 @@ if (menuBar && nav) {
     });
 }
 
-// FAQ Toggle Functionality
+
 const toggleButtons = document.querySelectorAll('.toggle-btn');
 
 toggleButtons.forEach(button => {
@@ -28,17 +28,27 @@ toggleButtons.forEach(button => {
 
         const isAlreadyActive = answer.classList.contains('active');
 
-        // Close all FAQ answers and reset button text
+    
         allFaqItems.forEach(a => a.classList.remove('active'));
         allButtons.forEach(b => (b.textContent = '+'));
 
-        // If it wasn’t active before, open it now
+    
         if (!isAlreadyActive) {
             answer.classList.add('active');
             button.textContent = '-';
         }
     });
 });
+document.querySelector('.scroll-indicator').addEventListener('click', function () {
+ 
+  this.classList.add('active');
+
+
+  document.querySelector('#footer').scrollIntoView({
+    behavior: 'smooth'
+  });
+});
+
 
 
 

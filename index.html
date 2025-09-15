@@ -246,7 +246,7 @@
         </div>
     </section>
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-column">
@@ -312,7 +312,7 @@ $('.gallery-slider').slick({
   dots: false,
   infinite: false,
   speed: 300,
-  slidesToShow: 4,
+ slidesToShow: 3.5,
   slidesToScroll: 4,
    prevArrow: '<button type="button" class="slick-prev custom-arrow"><i class="fa-solid fa-angle-left"></i></button>',
     nextArrow: '<button type="button" class="slick-next custom-arrow"><i class="fa-solid fa-angle-right"></i></button>',
@@ -330,11 +330,11 @@ $('.gallery-slider').slick({
     {
       breakpoint: 768,
       settings: {
-        slidesToShow:1,
-        slidesToScroll: 2,
-          dots: true
-          
-      }
+  slidesToShow: 1,
+  slidesToScroll: 1, 
+  dots: true,
+  arrows: false
+}
     }
    
     
